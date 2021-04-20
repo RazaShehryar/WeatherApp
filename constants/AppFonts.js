@@ -1,5 +1,6 @@
 const AppFonts = {
-  roboto: require("../assets/fonts/roboto.ttf"),
-  "roboto-h": require("../assets/fonts/roboto-h.ttf"),
+  "roboto-m": require("../assets/fonts/roboto-m.ttf"),
+  "roboto-r": require("../assets/fonts/roboto-r.ttf"),
+  "roboto-t": require("../assets/fonts/roboto-t.ttf"),
 };
 export default AppFonts;
