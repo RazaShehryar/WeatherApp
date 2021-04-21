@@ -2,6 +2,7 @@ import React from "react";
 import { useCallback } from "react";
 import {
   FlatList,
+  SafeAreaView,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -19,6 +20,7 @@ const CitiesList = ({ data }) => {
       <TouchableOpacity
         style={styles.rowView}
         onPress={() => navigate("details", { item })}
+        activeOpacity={0.8}
       >
         <View>
           <Text style={styles.name}>{name}</Text>
@@ -30,13 +32,15 @@ const CitiesList = ({ data }) => {
   });
 
   return (
-    <FlatList
-      data={data}
-      initialNumToRender={7}
-      keyExtractor={keyExtractor}
-      renderItem={renderItem}
-      ItemSeparatorComponent={() => <View style={styles.separator} />}
-    />
+    <SafeAreaView>
+      <FlatList
+        data={data}
+        initialNumToRender={7}
+        keyExtractor={keyExtractor}
+        renderItem={renderItem}
+        ItemSeparatorComponent={() => <View style={styles.separator} />}
+      />
+    </SafeAreaView>
   );
 };
 

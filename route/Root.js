@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 const Root = () => {
   const options = {
     headerTitleStyle: { color: "white" },
-    headerStyle: { backgroundColor: "#027F4C" },
+    headerStyle: { backgroundColor: "#00804A" },
     title: "WeatherApp",
   };
   return (

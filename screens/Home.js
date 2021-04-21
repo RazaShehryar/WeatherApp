@@ -4,6 +4,7 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 import getCities from "../api/getCities";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import CitiesList from "../components/CitiesList";
+import * as Location from "expo-location";
 
 const Home = () => {
   const [data, setData] = useState([]);
